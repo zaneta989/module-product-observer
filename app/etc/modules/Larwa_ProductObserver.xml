@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Larwa_ProductObserver>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Larwa_ProductObserver>
+    </modules>
+</config>

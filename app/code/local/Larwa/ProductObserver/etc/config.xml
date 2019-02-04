@@ -1,0 +1,7 @@
+<config>
+    <modules>
+        <Larwa_ProductObserver>
+            <version>0.1.0</version>
+        </Larwa_ProductObserver>
+    </modules>
+</config>
