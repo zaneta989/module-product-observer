@@ -1,4 +1,10 @@
-/app
+/app/code/community
+/app/code/core
+/app/design
+/app/etc
+/app/locale
+/app/Mage.php
+/app/bootstrap.php
 !/app/code/local/Larwa
 !/app/etc/modules/Larwa_ProductObserver.xml
 .idea
@@ -29,3 +35,4 @@ public/
 shell/
 skin/
 var/
+!.gitkeep

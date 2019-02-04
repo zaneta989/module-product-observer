@@ -4,4 +4,39 @@
             <version>0.1.0</version>
         </Larwa_ProductObserver>
     </modules>
+    <frontend>
+    <routers>
+        <productobserver>
+            <use>standard</use>
+            <args>
+                <module>Larwa_ProductObserver</module>
+                <frontName>report</frontName>
+            </args>
+        </productobserver>
+    </routers>
+</frontend>
+    <global>
+        <models>
+            <productobserver>
+                <class>Larwa_ProductObserver_Model</class>
+                <resourceModel>productobserver_resource</resourceModel>
+            </productobserver>
+            <productobserver_resource>
+                <class>Larwa_ProductObserver_Model_Resource</class>
+                <entities>
+                    <report>
+                        <table>product_observer_report</table>
+                    </report>
+                </entities>
+            </productobserver_resource>
+        </models>
+        <resources>
+            <productobserver_setup>
+                <setup>
+                    <module>Larwa_ProductObserver</module>
+                    <class>Larwa_ProductObserver_Model_Resource_Setup</class>
+                </setup>
+            </productobserver_setup>
+        </resources>
+    </global>
 </config>
