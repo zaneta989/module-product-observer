@@ -16,6 +16,17 @@
     </routers>
 </frontend>
     <global>
+        <events>
+            <catalog_controller_product_init>
+                <observers>
+                    <Larwa_productobserver_model_observer>
+                            <type>singleton</type>
+                            <class>Larwa_ProductObserver_Model_Observer</class>
+                            <method>observeProduct</method>
+                    </Larwa_productobserver_model_observer>
+                </observers>
+            </catalog_controller_product_init>
+        </events>
         <models>
             <productobserver>
                 <class>Larwa_ProductObserver_Model</class>
