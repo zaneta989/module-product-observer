@@ -24,23 +24,28 @@ class Larwa_ProductObserver_Block_Adminhtml_View_Grid extends Mage_Adminhtml_Blo
 
         $this->addColumn('id', [
             'header' => $helper->__('Id #'),
+            'width' => '200px',
             'index' => 'id'
         ]);
 
         $this->addColumn('ip', [
             'header' => $helper->__('IP Address'),
             'index' => 'ip',
+            'width' => '200px',
         ]);
 
         $this->addColumn('timestamp', [
             'header' => $helper->__('Date'),
             'type' => 'datetime',
-            'index' => 'timestamp'
+            'index' => 'timestamp',
+            'width' => '200px',
         ]);
 
         $this->addColumn('product_id', [
             'header' => $helper->__('Product Id'),
             'index' => 'product_id',
+            'type'  => 'number',
+            'width' => '200px',
         ]);
 
         return parent::_prepareColumns();
