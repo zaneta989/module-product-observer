@@ -1,0 +1,13 @@
+<config>
+    <menu>
+        <report>
+            <children>
+                <productobserver translate="title" module="productobserver">
+                    <sort_order>10</sort_order>
+                    <title>Product Views</title>
+                    <action>*/view</action>
+                </productobserver>
+            </children>
+        </report>
+    </menu>
+</config>

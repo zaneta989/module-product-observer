@@ -1,6 +1,7 @@
 /app/code/community
 /app/code/core
 /app/design
+!/app/design/adminhtml/default/default/layout/productobserver.xml
 /app/etc
 /app/locale
 /app/Mage.php

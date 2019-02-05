@@ -4,18 +4,20 @@
             <version>0.1.0</version>
         </Larwa_ProductObserver>
     </modules>
-    <frontend>
-    <routers>
-        <productobserver>
-            <use>standard</use>
-            <args>
-                <module>Larwa_ProductObserver</module>
-                <frontName>report</frontName>
-            </args>
-        </productobserver>
-    </routers>
-</frontend>
+
     <global>
+         <blocks>
+            <productobserver>
+                <class>Larwa_ProductObserver_Block</class>
+            </productobserver>
+         </blocks>
+
+        <helpers>
+            <productobserver>
+                <class>Larwa_ProductObserver_Helper</class>
+            </productobserver>
+        </helpers>
+
         <events>
             <catalog_controller_product_init>
                 <observers>
@@ -50,4 +52,24 @@
             </productobserver_setup>
         </resources>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <productobserver before="Mage_Adminhtml">Larwa_ProductObserver_Adminhtml</productobserver>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+  <adminhtml>
+    <layout>
+      <updates>
+        <productobserver>
+          <file>productobserver.xml</file>
+        </productobserver>
+      </updates>
+    </layout>
+  </adminhtml>
 </config>

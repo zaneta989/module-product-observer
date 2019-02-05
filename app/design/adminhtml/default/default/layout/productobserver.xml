@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+  <adminhtml_view_index>
+	<reference name="content">
+	  <block type="productobserver/adminhtml_view" name="productobserver_view"/>
+	</reference>
+  </adminhtml_view_index>
+</layout>
