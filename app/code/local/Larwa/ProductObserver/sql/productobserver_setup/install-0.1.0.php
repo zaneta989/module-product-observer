@@ -2,6 +2,7 @@
 
 $installer = $this;
 $installer->startSetup();
+
 $installer->run("
     CREATE TABLE `{$installer->getTable('productobserver/report')}` (
       `id` bigint NOT NULL auto_increment,
@@ -11,4 +12,5 @@ $installer->run("
       PRIMARY KEY  (`id`)
     ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 ");
+
 $installer->endSetup();

@@ -6,9 +6,10 @@ class Larwa_ProductObserver_Block_Adminhtml_View extends Mage_Adminhtml_Block_Wi
     {
         $this->_blockGroup = 'productobserver';
         $this->_controller = 'adminhtml_view';
-        $this->_headerText = Mage::helper('productobserver')->__('Product Observer');
+        $this->_headerText = Mage::helper('productobserver')->__('Product Views');
 
         parent::__construct();
+
         $this->_removeButton('add');
     }
 }

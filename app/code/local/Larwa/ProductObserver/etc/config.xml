@@ -52,6 +52,7 @@
             </productobserver_setup>
         </resources>
     </global>
+
     <admin>
         <routers>
             <adminhtml>
@@ -63,13 +64,15 @@
             </adminhtml>
         </routers>
     </admin>
-  <adminhtml>
-    <layout>
-      <updates>
-        <productobserver>
-          <file>productobserver.xml</file>
-        </productobserver>
-      </updates>
-    </layout>
-  </adminhtml>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <productobserver>
+                    <file>productobserver.xml</file>
+                </productobserver>
+            </updates>
+        </layout>
+    </adminhtml>
+
 </config>

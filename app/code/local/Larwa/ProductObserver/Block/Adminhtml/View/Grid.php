@@ -15,6 +15,7 @@ class Larwa_ProductObserver_Block_Adminhtml_View_Grid extends Mage_Adminhtml_Blo
     {
         $this->setCollection(Mage::getModel('productobserver/report')->getCollection());
         parent::_prepareCollection();
+
         return $this;
     }
 
